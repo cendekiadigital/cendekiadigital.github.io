@@ -20,7 +20,7 @@ export default function FloatingCTA() {
     return "Halo Cendekia Link, saya ingin konsultasi mengenai layanan Anda. Bisa dibantu?";
   };
 
-  const whatsappUrl = `https://wa.me/6285806326833?text=${encodeURIComponent(getMessage())}`;
+  const whatsappUrl = `https://wa.me/6282245848191?text=${encodeURIComponent(getMessage())}`;
 
   return (
     <Link
