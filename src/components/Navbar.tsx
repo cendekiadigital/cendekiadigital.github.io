@@ -35,8 +35,7 @@ export default function Navbar() {
           <Link href="/layanan-akademik" className="text-sm font-medium hover:text-academic-primary transition-colors flex items-center gap-2">
             <GraduationCap size={18} /> Layanan Akademik
           </Link>
-          <Link href="/#portfolio" className="text-sm font-medium hover:text-white transition-colors">Showcase</Link>
-          <Link href="https://wa.me/6282245848191" target="_blank" className="btn btn-tech text-sm">Konsultasi Gratis</Link>
+          <Link href="https://wa.me/6282245848191?text=Halo%20Cendekia%20Link%2C%20saya%20tertarik%20untuk%20konsultasi%20mengenai%20layanan%20Anda.%20Bisa%20dibantu%3F" target="_blank" className="btn btn-tech text-sm">Konsultasi Gratis</Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -57,7 +56,7 @@ export default function Navbar() {
           <Link href="/layanan-akademik" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
             <GraduationCap size={18} /> Layanan Akademik
           </Link>
-          <Link href="https://wa.me/6282245848191" target="_blank" className="btn btn-tech" onClick={() => setIsMobileMenuOpen(false)}>Konsultasi Gratis</Link>
+          <Link href="https://wa.me/6282245848191?text=Halo%20Cendekia%20Link%2C%20saya%20tertarik%20untuk%20konsultasi%20mengenai%20layanan%20Anda.%20Bisa%20dibantu%3F" target="_blank" className="btn btn-tech" onClick={() => setIsMobileMenuOpen(false)}>Konsultasi Gratis</Link>
         </div>
       )}
     </nav>
