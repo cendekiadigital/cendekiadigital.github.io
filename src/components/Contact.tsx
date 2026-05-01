@@ -78,7 +78,7 @@ export default function Contact() {
               </div>
               <div>
                 <div className="text-sm text-text-muted">WhatsApp</div>
-                <div className="font-bold">+62 858 0632 6833</div>
+                <div className="font-bold">+62 822-4584-8191</div>
               </div>
             </div>
           </div>
