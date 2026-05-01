@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Layout, GraduationCap, Code2, Menu, X } from 'lucide-react';
+import { Home, GraduationCap, Code2, Menu, X } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Navbar() {
@@ -26,14 +26,17 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
-          <Link href="#tech" className="text-sm font-medium hover:text-tech-primary transition-colors flex items-center gap-2">
-            <Code2 size={18} /> IT Services
+          <Link href="/" className="text-sm font-medium hover:text-white transition-colors flex items-center gap-2">
+            <Home size={18} /> Home
           </Link>
-          <Link href="#academic" className="text-sm font-medium hover:text-academic-primary transition-colors flex items-center gap-2">
-            <GraduationCap size={18} /> Academic
+          <Link href="/jasa-digital" className="text-sm font-medium hover:text-tech-primary transition-colors flex items-center gap-2">
+            <Code2 size={18} /> Jasa Digital
           </Link>
-          <Link href="#portfolio" className="text-sm font-medium hover:text-white transition-colors">Showcase</Link>
-          <Link href="#contact" className="btn btn-tech text-sm">Konsultasi Gratis</Link>
+          <Link href="/layanan-akademik" className="text-sm font-medium hover:text-academic-primary transition-colors flex items-center gap-2">
+            <GraduationCap size={18} /> Layanan Akademik
+          </Link>
+          <Link href="/#portfolio" className="text-sm font-medium hover:text-white transition-colors">Showcase</Link>
+          <Link href="https://wa.me/6282245848191" target="_blank" className="btn btn-tech text-sm">Konsultasi Gratis</Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -45,13 +48,16 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden glass absolute top-full left-0 right-0 p-6 flex flex-col gap-4 animate-in slide-in-from-top duration-300">
-          <Link href="#tech" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-            <Code2 size={18} /> IT Services
+          <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <Home size={18} /> Home
           </Link>
-          <Link href="#academic" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-            <GraduationCap size={18} /> Academic
+          <Link href="/jasa-digital" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <Code2 size={18} /> Jasa Digital
           </Link>
-          <Link href="#contact" className="btn btn-tech" onClick={() => setIsMobileMenuOpen(false)}>Konsultasi Gratis</Link>
+          <Link href="/layanan-akademik" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <GraduationCap size={18} /> Layanan Akademik
+          </Link>
+          <Link href="https://wa.me/6282245848191" target="_blank" className="btn btn-tech" onClick={() => setIsMobileMenuOpen(false)}>Konsultasi Gratis</Link>
         </div>
       )}
     </nav>

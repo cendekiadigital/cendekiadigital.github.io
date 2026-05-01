@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Sparkles, ArrowRight, UserCheck, Bot } from 'lucide-react';
+import Link from 'next/link';
 
 export default function HumanizeShowcase() {
   return (
@@ -51,9 +52,9 @@ export default function HumanizeShowcase() {
       </div>
 
       <div className="mt-12 text-center">
-        <button className="btn btn-academic">
+        <Link href="https://wa.me/6282245848191" target="_blank" className="btn btn-academic">
           Coba Humanize Sekarang <ArrowRight size={18} />
-        </button>
+        </Link>
       </div>
     </section>
   );

@@ -38,26 +38,26 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.8 }}
         >
           {/* Tech Funnel */}
-          <Link href="#tech" className="group relative glass p-8 rounded-3xl text-left glass-hover border-tech-primary/20 z-20">
+          <Link href="/jasa-digital" className="group relative glass p-8 rounded-3xl text-left glass-hover border-tech-primary/20 z-20">
             <div className="w-14 h-14 rounded-2xl bg-tech-gradient flex items-center justify-center mb-6 shadow-lg shadow-tech-glow">
               <Code2 className="text-white" size={28} />
             </div>
-            <h3 className="text-2xl font-bold mb-3 group-hover:text-tech-primary transition-colors">IT & Web Dev</h3>
-            <p className="text-text-muted mb-6">Membangun ekosistem digital yang responsif, cepat, dan berorientasi pada konversi.</p>
+            <h3 className="text-2xl font-bold mb-3 group-hover:text-tech-primary transition-colors">Jasa Digital</h3>
+            <p className="text-text-muted mb-6">Membangun website, aplikasi custom, dan branding visual profesional untuk bisnis Anda.</p>
             <div className="flex items-center text-tech-primary font-semibold gap-1 group-hover:gap-2 transition-all">
-              Eksplor Layanan <ChevronRight size={18} />
+              Lihat Layanan Digital <ChevronRight size={18} />
             </div>
           </Link>
 
           {/* Academic Funnel */}
-          <Link href="#academic" className="group relative glass p-8 rounded-3xl text-left glass-hover border-academic-primary/20 z-20">
+          <Link href="/layanan-akademik" className="group relative glass p-8 rounded-3xl text-left glass-hover border-academic-primary/20 z-20">
             <div className="w-14 h-14 rounded-2xl bg-academic-gradient flex items-center justify-center mb-6 shadow-lg shadow-academic-glow">
               <GraduationCap className="text-white" size={28} />
             </div>
             <h3 className="text-2xl font-bold mb-3 group-hover:text-academic-primary transition-colors">Layanan Akademik</h3>
-            <p className="text-text-muted mb-6">Bantuan riset, penulisan artikel jurnal, dan optimasi naskah akademik profesional.</p>
+            <p className="text-text-muted mb-6">Review jurnal, parafrase AI, proofreading, dan formatting karya ilmiah profesional.</p>
             <div className="flex items-center text-academic-primary font-semibold gap-1 group-hover:gap-2 transition-all">
-              Mulai Konsultasi <ChevronRight size={18} />
+              Lihat Layanan Akademik <ChevronRight size={18} />
             </div>
           </Link>
         </motion.div>

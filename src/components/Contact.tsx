@@ -1,9 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Send, Mail, MessageSquare, MapPin, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+  const form = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,31 +25,31 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!form.current) return;
+
     setIsSubmitting(true);
     setStatus('idle');
     setErrorMessage('');
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const result = await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '', 
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '', 
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
+      );
 
-      const data = await response.json();
-
-      if (response.ok) {
+      if (result.text === 'OK') {
         setStatus('success');
         setFormData({ name: '', email: '', service: 'IT / Web Development', message: '' });
       } else {
-        setStatus('error');
-        setErrorMessage(data.error || 'Terjadi kesalahan saat mengirim pesan');
+        throw new Error('Gagal mengirim pesan');
       }
     } catch (error) {
+      console.error('EmailJS Error:', error);
       setStatus('error');
-      setErrorMessage('Terjadi kesalahan jaringan. Silakan coba lagi.');
+      setErrorMessage('Terjadi kesalahan saat mengirim pesan. Silakan coba lagi nanti.');
     } finally {
       setIsSubmitting(false);
     }
@@ -97,7 +99,7 @@ export default function Contact() {
             </div>
           )}
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form ref={form} onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="text-sm font-semibold ml-1">Nama Lengkap</label>
