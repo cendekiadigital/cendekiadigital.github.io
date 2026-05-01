@@ -106,7 +106,11 @@ export default function WebPortfolioPage() {
                 </div>
 
                 <div className="pt-4">
-                  <a href="https://wa.me/6282245848191" target="_blank" className="btn btn-tech">
+                  <a 
+                    href={`https://wa.me/6285806326833?text=${encodeURIComponent(`Halo Cendekia Link, saya tertarik untuk konsultasi mengenai proyek ${project.title}. Bisa dibantu?`)}`}
+                    target="_blank" 
+                    className="btn btn-tech"
+                  >
                     Konsultasi Proyek Serupa <ArrowRight size={18} />
                   </a>
                 </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import { Send, Mail, MessageSquare, MapPin, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
+import { Send, Camera, MessageSquare, MapPin, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
@@ -65,11 +65,11 @@ export default function Contact() {
           <div className="space-y-6">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-xl glass flex items-center justify-center text-tech-primary">
-                <Mail size={24} />
+                <Camera size={24} />
               </div>
               <div>
-                <div className="text-sm text-text-muted">Email Kami</div>
-                <div className="font-bold">fatwawebdev@gmail.com</div>
+                <div className="text-sm text-text-muted">Instagram Kami</div>
+                <div className="font-bold">@cendekia.link</div>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -78,96 +78,31 @@ export default function Contact() {
               </div>
               <div>
                 <div className="text-sm text-text-muted">WhatsApp</div>
-                <div className="font-bold">+62 858 1211 5605</div>
+                <div className="font-bold">+62 858 0632 6833</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="glass p-8 md:p-10 rounded-[2.5rem] border-white/5">
-          {status === 'success' && (
-            <div className="mb-6 p-4 bg-green-500/10 border border-green-500/20 rounded-xl flex items-center gap-3">
-              <CheckCircle className="text-green-500" size={20} />
-              <span className="text-green-500">Pesan berhasil dikirim! Kami akan segera menghubungi Anda.</span>
-            </div>
-          )}
-          
-          {status === 'error' && (
-            <div className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-xl flex items-center gap-3">
-              <AlertCircle className="text-red-500" size={20} />
-              <span className="text-red-500">{errorMessage}</span>
-            </div>
-          )}
-
-          <form ref={form} onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-sm font-semibold ml-1">Nama Lengkap</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-tech-primary transition-colors"
-                  placeholder="John Doe"
-                />
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-semibold ml-1">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-tech-primary transition-colors"
-                  placeholder="john@example.com"
-                />
-              </div>
-            </div>
-            <div className="space-y-2">
-              <label className="text-sm font-semibold ml-1">Pilih Layanan</label>
-              <select
-                name="service"
-                value={formData.service}
-                onChange={handleChange}
-                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-tech-primary transition-colors appearance-none"
-              >
-                <option value="IT / Web Development">IT / Web Development</option>
-                <option value="Layanan Akademik">Layanan Akademik</option>
-                <option value="Lainnya">Lainnya</option>
-              </select>
-            </div>
-            <div className="space-y-2">
-              <label className="text-sm font-semibold ml-1">Pesan</label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows={4}
-                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-tech-primary transition-colors"
-                placeholder="Ceritakan kebutuhan Anda..."
-              />
-            </div>
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="btn btn-tech w-full py-4 text-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+        <div className="glass p-8 md:p-12 rounded-[2.5rem] border-white/5 flex flex-col items-center text-center justify-center space-y-8">
+          <div className="w-20 h-20 rounded-full bg-green-500/20 flex items-center justify-center text-green-500 mb-2">
+            <MessageSquare size={40} />
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold mb-4">Hubungi Kami via WhatsApp</h3>
+            <p className="text-text-muted mb-8 max-w-sm mx-auto">
+              Untuk respon lebih cepat dan konsultasi langsung, silakan hubungi tim kami melalui WhatsApp.
+            </p>
+            <a 
+              href="https://wa.me/6282245848191?text=Halo%20Cendekia%20Link%2C%20saya%20tertarik%20untuk%20konsultasi%20mengenai%20layanan%20Anda.%20Bisa%20dibantu%3F" 
+              target="_blank" 
+              className="btn btn-tech w-full py-5 text-xl flex items-center justify-center gap-3 bg-green-600 hover:bg-green-500 border-none shadow-lg shadow-green-600/20"
             >
-              {isSubmitting ? (
-                <>
-                  <Loader2 size={20} className="animate-spin" />
-                  Mengirim...
-                </>
-              ) : (
-                <>
-                  Kirim Pesan <Send size={20} />
-                </>
-              )}
-            </button>
-          </form>
+              <MessageSquare size={24} /> Chat Sekarang
+            </a>
+          </div>
+          
+    
         </div>
       </div>
     </section>

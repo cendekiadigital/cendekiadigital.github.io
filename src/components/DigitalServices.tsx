@@ -9,7 +9,7 @@ import Link from 'next/link';
 const techServices = [
   { icon: <Globe size={24} />, title: 'Pembuatan Web & App Custom', desc: 'Website Landing Page, Company Profile, hingga E-commerce yang responsif dan cepat.', link: '/portfolio/web-development' },
   { icon: <Smartphone size={24} />, title: 'Portofolio Branding', desc: 'Membangun identitas visual yang kuat untuk brand atau personal Anda.', link: '#portfolio-branding' },
-  { icon: <Cpu size={24} />, title: 'Custom Layanan Digital', desc: 'Konsultasikan kebutuhan digital spesifik Anda kepada tim ahli kami.', link: 'https://wa.me/6282245848191' },
+  { icon: <Cpu size={24} />, title: 'Custom Layanan Digital', desc: 'Konsultasikan kebutuhan digital spesifik Anda kepada tim ahli kami.', link: 'https://wa.me/6282245848191?text=Halo%20Cendekia%20Link%2C%20saya%20tertarik%20untuk%20konsultasi%20mengenai%20Jasa%20Digital.%20Bisa%20dibantu%3F' },
 ];
 
 export default function DigitalServices() {
