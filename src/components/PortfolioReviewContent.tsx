@@ -125,10 +125,10 @@ export default function PortfolioReviewContent() {
               </div>
               
               <div className="text-center space-y-4">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-academic-primary/10 border border-academic-primary/20">
+                {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-academic-primary/10 border border-academic-primary/20">
                   <Users size={16} className="text-academic-primary" />
                   <span className="text-academic-primary text-sm font-semibold">100+ Peneliti Terbantu</span>
-                </div>
+                </div> */}
                 <p className="text-text-muted text-sm">Telah membantu peneliti dari berbagai universitas dalam mempublikasikan artikel jurnal berkualitas</p>
               </div>
             </div>
