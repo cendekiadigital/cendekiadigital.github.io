@@ -7,8 +7,8 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/5 pt-20 pb-10">
       <div className="container">
-        <div className="grid md:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-1 md:col-span-1">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+          <div className="col-span-2 md:col-span-1">
             <Link href="/" className="text-2xl font-bold tracking-tighter block mb-6">
               <span className="text-gradient-tech">Cendekia</span>
               <span className="text-gradient-academic">Link</span>
@@ -44,15 +44,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold mb-6">Company</h4>
-            <ul className="space-y-4 text-sm text-text-muted">
-              <li><Link href="/tentang-kami" className="hover:text-white transition-colors">Tentang Kami</Link></li>
-              <li><Link href="/karir" className="hover:text-white transition-colors">Karir</Link></li>
-              <li><Link href="/kebijakan-privasi" className="hover:text-white transition-colors">Kebijakan Privasi</Link></li>
-              <li><Link href="/syarat-ketentuan" className="hover:text-white transition-colors">Syarat & Ketentuan</Link></li>
-            </ul>
-          </div>
+          
         </div>
 
         <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-4">

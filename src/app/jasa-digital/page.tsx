@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import DigitalServices from "@/components/DigitalServices";
 import DigitalWorkflow from "@/components/DigitalWorkflow";
-import DigitalPortfolio from "@/components/DigitalPortfolio";
 import Contact from "@/components/Contact";
 
 export const metadata = {
@@ -16,7 +15,6 @@ export default function DigitalPage() {
       <Navbar />
       <DigitalServices />
       <DigitalWorkflow />
-      <DigitalPortfolio />
       <Contact />
       <Footer />
     </main>

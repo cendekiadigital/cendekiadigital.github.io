@@ -9,15 +9,15 @@ export default function FloatingCTA() {
   
   const getMessage = () => {
     if (pathname === '/jasa-digital') {
-      return "Halo Cendekia Link, saya tertarik untuk konsultasi mengenai Jasa Digital. Bisa dibantu?";
+      return "Hai, Kak, saya tertarik untuk konsultasi mengenai Jasa Digital. [Silakan tulis apa yang ingin Anda order atau konsultasikan]";
     }
     if (pathname === '/layanan-akademik') {
-      return "Halo Cendekia Link, saya tertarik untuk konsultasi mengenai Layanan Akademik. Bisa dibantu?";
+      return "Hai, Kak, saya tertarik untuk konsultasi mengenai Layanan Akademik. [Silakan tulis apa yang ingin Anda order atau konsultasikan]";
     }
     if (pathname === '/portfolio/web-development') {
-      return "Halo Cendekia Link, saya sedang melihat portofolio web Anda dan ingin bertanya lebih lanjut. Bisa dibantu?";
+      return "Hai, Kak, saya sedang melihat portofolio web Anda dan ingin bertanya lebih lanjut. [Silakan tulis apa yang ingin Anda order atau konsultasikan]";
     }
-    return "Halo Cendekia Link, saya ingin konsultasi mengenai layanan Anda. Bisa dibantu?";
+    return "Hai, Kak, saya ingin konsultasi mengenai layanan Anda. [Silakan tulis apa yang ingin Anda order atau konsultasikan]";
   };
 
   const whatsappUrl = `https://wa.me/6282245848191?text=${encodeURIComponent(getMessage())}`;
