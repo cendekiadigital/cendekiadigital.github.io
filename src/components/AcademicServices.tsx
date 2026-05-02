@@ -48,7 +48,7 @@ export default function AcademicServices() {
             <h4 className="text-xl font-bold mb-2">{service.title}</h4>
             <p className="text-text-muted text-sm leading-relaxed mb-6">{service.desc}</p>
             <Link href={service.link} className="text-xs font-bold text-academic-primary hover:underline">
-              {service.title.includes('Jurnal') ? 'Lihat Portofolio' : 'Konsultasi Sekarang'}
+              {service.title.includes('Jurnal') || service.title.includes('Parafrase') ? 'Lihat Portofolio' : 'Konsultasi Sekarang'}
             </Link>
           </motion.div>
         ))}
