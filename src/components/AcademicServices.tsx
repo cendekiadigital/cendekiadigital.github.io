@@ -8,7 +8,7 @@ import {
 import Link from 'next/link';
 
 const academicServices = [
-  { icon: <FileText size={24} />, title: 'Review Artikel Jurnal', desc: 'Review mendalam untuk jurnal nasional & internasional agar siap publikasi.', link: '#portfolio-jurnal' },
+  { icon: <FileText size={24} />, title: 'Review Artikel Jurnal', desc: 'Review mendalam untuk jurnal nasional & internasional agar siap publikasi.', link: '/portfolio-review-artikel' },
   { icon: <BookOpen size={24} />, title: 'Review E-book & Translation', desc: 'Layanan review konten buku elektronik dan penerjemahan profesional.', link: 'https://wa.me/6282245848191?text=Halo%20Cendekia%20Link%2C%20saya%20tertarik%20untuk%20konsultasi%20mengenai%20Layanan%20Akademik.%20Bisa%20dibantu%3F' },
   { icon: <Search size={24} />, title: 'Parafrase AI Text', desc: 'Ubah teks AI menjadi natural, mengalir, dan lolos deteksi plagiasi.', link: 'https://wa.me/6282245848191?text=Halo%20Cendekia%20Link%2C%20saya%20tertarik%20untuk%20konsultasi%20mengenai%20Layanan%20Akademik.%20Bisa%20dibantu%3F' },
   { icon: <ShieldCheck size={24} />, title: 'Proofreading', desc: 'Pengecekan ejaan, tata bahasa, dan koherensi naskah secara teliti.', link: 'https://wa.me/6282245848191?text=Halo%20Cendekia%20Link%2C%20saya%20tertarik%20untuk%20konsultasi%20mengenai%20Layanan%20Akademik.%20Bisa%20dibantu%3F' },

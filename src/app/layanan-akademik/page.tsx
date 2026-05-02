@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AcademicServices from "@/components/AcademicServices";
 import HumanizeShowcase from "@/components/HumanizeShowcase";
-import Showcase from "@/components/Showcase";
 import Contact from "@/components/Contact";
 
 export const metadata = {
@@ -16,7 +15,6 @@ export default function AcademicPage() {
       <Navbar />
       <AcademicServices />
       <HumanizeShowcase />
-      <Showcase />
       <Contact />
       <Footer />
     </main>
