@@ -25,7 +25,7 @@ const projects = [
     title: "Website Media Berita",
     category: "Website", 
     image: "/images/portfolio/web.png",
-    description: "Maos adalah website media berita. Platform ini menyediakan cara yang menarik bagi pengguna untuk menemukan, membaca, dan menjelajahi artikel berita di berbagai kategori.",
+    description: "Platform ini menyediakan cara yang menarik bagi pengguna untuk menemukan, membaca, dan menjelajahi artikel berita di berbagai kategori.",
     features: ["News Management", "Category Filtering", "Search Functionality", "User Comments"],
     tech: ["Swiper.js", "Laravel", "MySQL"]
   },
@@ -55,6 +55,38 @@ const additionalProjects = [
     description: "Platform web berbasis AI untuk mempercepat proses Systematic Literature Review (SLR).",
     features: ["Analisis Artikel dengan AI", "Snowballing Referensi", "Peta Sitasi Interaktif", "SLR Synthesis"],
     tech: ["Vanilla HTML", "Node.js", "Python", "Groq API", "SQLite"]
+  },
+  {
+    title: "Sistem Kasir",
+    category: "Web Application",
+    image: "/images/portfolio/kasir1.png",
+    description: "Aplikasi web Point of Sale (POS) dirancang untuk membantu usaha kecil dan menengah dalam mengelola transaksi secara efisien.",
+    features: ["Pengelolaan produk", "Manajemen stok dengan tracking otomatis", "Tracking expired date", "Notifikasi stok rendah"],
+    tech: ["Laravel 12", "Filament 5", "Livewire", "ailwind CSS"]
+  },
+  {
+    title: "Transcrib Meet",
+    category: "Web Application",
+    image: "/images/portfolio/trans.png",
+    description: "Aplikasi web berbasis AI yang dirancang khusus untuk merekam rapat (seperti Zoom/Teams) dan melakukan transkripsi otomatis dengan kualitas tinggi.",
+    features: ["Real-time audio recording", "AI-Powered Transcription", "Intelligent Content Analysis", "Stereo to mono conversion"],
+    tech: ["Python 3.9+", "FastAPI", "Uvicorn", "JavaScript "]
+  },
+  {
+    title: "WA Status Optimizer",
+    category: "Application",
+    image: "/images/portfolio/wa.png",
+    description: "Aplikasi web berbasis PWA (Progressive Web App) yang dirancang untuk mengoptimasi video agar dapat diunggah ke WhatsApp Status tanpa mengalami kompresi agresif yang menurunkan kualitas.",
+    features: ["Optimasi Video", "Pemrosesan Video Cerdas", "Quick Share ke WhatsApp", "Progressive Web App"],
+    tech: ["JavaScript", "puppeteer-core", "ffmpeg", "Compressor.js"]
+  },
+  {
+    title: "YouTube Clipper",
+    category: "Web Application",
+    image: "/images/portfolio/clip.png",
+    description: "Aplikasi web untuk memotong (clip) video YouTube menjadi bagian-bagian highlight yang siap dipublikasikan ke platform sosial media",
+    features: ["Auto-Generate Highlights", "Dukungan Multiple Platform", "Format Export", "Mode Processing"],
+    tech: ["Node.js", "npm", "FFmpeg"]
   }
 ];
 
